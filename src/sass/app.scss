@@ -1,0 +1,13 @@
+@import "./common.scss";
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-width: 1400px;
+    font-family: Helvetica, sans-serif;
+    .el-row {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

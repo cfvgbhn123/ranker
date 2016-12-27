@@ -1,0 +1,69 @@
+$fc1: #333;
+$fc2: #666; 
+$fc3: #999;
+$bc: #fd575e;
+$border: #e6e6e6;
+$url: 'https://oeqgdgt5p.qnssl.com/';
+
+@mixin box(){
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+} 
+
+@mixin box_orient($fx){
+    -webkit-box-orient: $fx;
+    -moz-box-orient: $fx;
+    -o-box-orient: $fx;
+    box-orient: $fx;
+}
+
+@mixin box_flex($num){
+    -webkit-box-flex: $num;
+    -moz-box-flex: $num;
+    -ms-flex: $num; 
+    -o-box-flex: $num;
+    box-flex: $num;
+}
+
+@mixin box_flex_group($num){
+    -webkit-box-flex-group: $num;
+    -moz-box-flex-group:$num;
+    -o-box-flex-group:$num;
+    -ms-box-flex-group:$num;
+    box-flex-group:$num;
+    
+}
+
+@mixin box_align($fx){
+    -webkit-box-align: $fx;
+    -moz-box-align: $fx;
+    -ms-flex-align: $fx;
+    -o-box-align: $fx;
+    box-align: $fx;
+}
+
+@mixin box_pack($fx){
+    -webkit-box-pack: $fx;
+    -moz-box-pack: $fx;
+    -ms-flex-pack: $fx;
+    -o-box-pack: $fx;
+    box-pack: $fx;
+}
+
+@mixin box_sizing(){
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-flex-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin transform($str){
+    transform:$str;
+    -ms-transform:$str;     /* IE 9 */
+    -moz-transform:$str;    /* Firefox */
+    -webkit-transform:$str; /* Safari 和 Chrome */
+    -o-transform:$str; 
+}
